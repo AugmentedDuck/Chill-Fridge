@@ -46,7 +46,7 @@ html, body {
 
 .delete-btn {
   margin: 0em;
-  padding: 0em;
+  padding: 0em 0em;
   color: red;
   border: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -85,4 +85,17 @@ html, body {
 
 .food-delete {
   width: 15%;
+}
+
+.btn-add {
+  font-weight: bold;
+  color:#333;
+  transition: 100ms;
+  background-color: rgba(0, 0, 255, .2);
+  border-radius: 0%;
+}
+
+.btn-add:hover {
+  background-color: rgba(100, 100, 255, 0.1);
+  transition: 250ms;
 }
