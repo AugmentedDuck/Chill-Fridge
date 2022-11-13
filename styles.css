@@ -99,3 +99,21 @@ html, body {
   background-color: rgba(100, 100, 255, 0.1);
   transition: 250ms;
 }
+
+.btn-idea-align {
+  left: 40%;
+  margin: 0;
+  position: relative;
+}
+
+.btn-idea {
+  padding: 1em;
+  border-radius: 0%;
+  background-color: rgba(200, 200, 200, .5);
+  transition: 250ms;
+  color: #333;
+}
+
+.btn-idea:hover {
+  background-color: rgba(200, 200, 200, 0.25);
+}
