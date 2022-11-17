@@ -1,41 +1,73 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>W.I.P</title>
+        <title>AugmentedDuck | Log-in</title>
         <meta name="description" content="a place to find AugmentedDuck's stuff">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./src/styles-login.css">
     </head>
     <body>
       <header class="main-header">
         <h1 class="web-name">Chill Fridge</h1>
       </header>
+        <!--Login/sign-up forms-->
+        <section class="container">
+          <div class="login-container">
+            <!--Login form-->
+            <form class="form" id="login">
+              <h1 class="form-title">Login</h1>
+              <div class="form-message form-message-error"></div>
 
-      <section class="content-section container">
-        <h2 class="section-header">Dine varer:</h2>
-        <div class="food-row">
-          <span class="food-delete food-header food-column">Fjern Vare</span>
-          <span class="food-item food-header food-column">Vare</span>
-          <span class="food-time food-header food-column">Tid til udløbsdato</span>
-        </div>
-        <div class="food-row">
-          <button class="btn delete-btn food-delete food-column" role="button">X</button>
-          <span class="food-item food-column">Mælk</span>
-          <span class="food-time food-column">7 Dage</span>
-        </div>
-        <div class="food-row">
-          <button class="btn delete-btn food-delete food-column" role="button">X</button>
-          <span class="food-item food-column">Smør</span>
-          <span class="food-time food-column">14 Dage</span>
-        </div>
-      </section>
+              <div class="form-input-group">
+                <input type="text" class="form-input" id="loginUsername" required autofocus placeholder="Username">
+                <div class="form-input-error-message"></div>
+              </div>
 
-      <section class="container">
-        <div>
-          <button class="btn btn-add" type="button" onclick="window.location.href='addFood.html'">Tilføj mad</button>
-        </div>
-        <div class="btn-idea-align">
-          <button class="btn btn-idea" type="button" onclick="window.location.href=''">Giv mig nogle idéer</button>
-        </div>
-      </section>
+              <div class="form-input-group">
+                <input type="password" class="form-input" id="loginPassword" required placeholder="Password">
+                <div class="form-input-error-message"></div>
+              </div>
+
+              <button class="form-btn" type="submit">Continue</button>
+              <p class="form-text">
+                <a href="#" class="form-link">Forgot your password?</a>
+              </p>
+              <p class="form-text">
+                <a id="linkCreateAccount" href="./login.html" class="form-link">Don't have an account?</a>
+              </p>
+            </form>
+            <!--Sign-up form-->
+            <form class="form form-hidden" id="createAccount">
+              <h1 class="form-title">Create Account</h1>
+              <div class="form-message form-message-error"></div>
+
+              <div class="form-input-group">
+                <input type="text" id="signupUsername" class="form-input" required autofocus placeholder="Username">
+                <div class="form-input-error-message"></div>
+              </div>
+
+              <div class="form-input-group">
+                <input type="text" class="form-input" required autofocus placeholder="Email Address">
+                <div class="form-input-error-message"></div>
+              </div>
+
+              <div class="form-input-group">
+                <input type="password" class="form-input" required placeholder="Password">
+                <div class="form-input-error-message"></div>
+              </div>
+
+              <div class="form-input-group">
+                <input type="password" class="form-input" required placeholder="Confirm Password">
+                <div class="form-input-error-message"></div>
+              </div>
+
+              <button class="form-btn" type="submit">Sorry... no new accounts can be created</button>
+              <p class="form-text">
+                <a id="linkLogin" href="./login.html" class="form-link">Already have an account?</a>
+              </p>
+            </form>
+          </div>
+
+           <script src="./src/main.js"></script>
+        </section>
     </body>
 </html>
