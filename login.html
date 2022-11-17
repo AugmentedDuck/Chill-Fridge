@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AugmentedDuck | Log-in</title>
+        <meta name="description" content="a place to find AugmentedDuck's stuff">
+        <link rel="stylesheet" href="./src/styles-login.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="games.html">GAMES</a></li>
+                    <li><a href="others.html">OTHER</a></li>
+                    <li><a href="login.html">LOG-IN</a></li>
+                </ul>
+            </nav>
+            <h1 class="title-name">augmentedDuck</h1>
+        </header>
+        <!--Login/sign-up forms-->
+        <section class="container">
+          <div class="login-container">
+            <!--Login form-->
+            <form class="form" id="login">
+              <h1 class="form-title">Login</h1>
+              <div class="form-message form-message-error"></div>
+
+              <div class="form-input-group">
+                <input type="text" class="form-input" id="loginUsername" required autofocus placeholder="Username">
+                <div class="form-input-error-message"></div>
+              </div>
+
+              <div class="form-input-group">
+                <input type="password" class="form-input" id="loginPassword" required placeholder="Password">
+                <div class="form-input-error-message"></div>
+              </div>
+
+              <button class="form-btn" type="submit">Continue</button>
+              <p class="form-text">
+                <a href="#" class="form-link">Forgot your password?</a>
+              </p>
+              <p class="form-text">
+                <a id="linkCreateAccount" href="./login.html" class="form-link">Don't have an account?</a>
+              </p>
+            </form>
+            <!--Sign-up form-->
+            <form class="form form-hidden" id="createAccount">
+              <h1 class="form-title">Create Account</h1>
+              <div class="form-message form-message-error"></div>
+
+              <div class="form-input-group">
+                <input type="text" id="signupUsername" class="form-input" required autofocus placeholder="Username">
+                <div class="form-input-error-message"></div>
+              </div>
+
+              <div class="form-input-group">
+                <input type="text" class="form-input" required autofocus placeholder="Email Address">
+                <div class="form-input-error-message"></div>
+              </div>
+
+              <div class="form-input-group">
+                <input type="password" class="form-input" required placeholder="Password">
+                <div class="form-input-error-message"></div>
+              </div>
+
+              <div class="form-input-group">
+                <input type="password" class="form-input" required placeholder="Confirm Password">
+                <div class="form-input-error-message"></div>
+              </div>
+
+              <button class="form-btn" type="submit">Sorry... no new accounts can be created</button>
+              <p class="form-text">
+                <a id="linkLogin" href="./login.html" class="form-link">Already have an account?</a>
+              </p>
+            </form>
+          </div>
+
+           <script src="./src/main.js"></script>
+        </section>
+    </body>
+</html>
