@@ -51,8 +51,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   loginForm.addEventListener("submit", e => {
     e.preventDefault();
-    if(cyrb53(document.getElementById("loginUsername").value) == "4728028087113984" && cyrb53(document.getElementById("loginPassword").value) == "3995282302599932"){
+    if(cyrb53(document.getElementById("loginUsername").value) == "3333027681311381" && cyrb53(document.getElementById("loginPassword").value) == "6013280038036543"){
       setFormMessage(loginForm, "success", "Yay")
+      location.replace('/main.html');
     } else {
       setFormMessage(loginForm, "error", "Invalid username or password")
     }
