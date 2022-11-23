@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     if(cyrb53(document.getElementById("loginUsername").value) == "3333027681311381" && cyrb53(document.getElementById("loginPassword").value) == "6013280038036543"){
       setFormMessage(loginForm, "success", "Yay")
-      location.replace('/main.html');
+      location.replace('Chill-Fridge/main.html');
     } else {
       setFormMessage(loginForm, "error", "Invalid username or password")
     }
