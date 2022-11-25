@@ -1,6 +1,10 @@
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css2?family=Quicksand);
+@import url(https://fonts.googleapis.com/css2?family=Raleway);
+
 * {
   box-sizing: border-box;
-  color: #777;
+  color: #080808;
 }
 
 html, body {
@@ -9,15 +13,16 @@ html, body {
 }
 
 .main-header {
-  padding-bottom: 30px;
+  padding-bottom: 2em;
 }
 
 .web-name {
   text-align: center;
   margin: 0;
   font-size: 4em;
+  font-family: Source Sans Pro;
   font-weight: bold;
-  color: #666;
+  color: #002e2c;
 }
 
 .content-section {
@@ -25,7 +30,7 @@ html, body {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 400px;
   margin: 0 auto;
   padding: 0 1.5em;
 }
@@ -33,21 +38,22 @@ html, body {
 .section-header {
   font-weight: bold;
   color: #333;
-  text-align: center;
+  text-align: left;
+  font-family: Quicksand;
 }
 
 .btn {
   text-align: center;
   vertical-align: middle;
   padding: .67em;
-  margin: 1em;
+  margin-top: 1em;
   cursor: pointer;
 }
 
 .delete-btn {
   margin: 0em;
   padding: 0em 0em;
-  color: red;
+  color: #ea0004;
   border: 0px;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 0%;
@@ -56,19 +62,12 @@ html, body {
   transition: 500ms;
 }
 
-.food-header {
-  font-weight: bold;
-  font-size: 1.2em;
-  color: #333;
-}
-
 .food-column {
-  display: flex;
+  display: block;
   align-items: center;
-  border-bottom: 1px solid black;
-  margin-right: 1.5em;
-  padding-bottom: 10px;
-  margin-top: 10px;
+  margin-right: 0;
+  padding-bottom: 0;
+  margin-top: .25em;
 }
 
 .food-row {
@@ -77,10 +76,16 @@ html, body {
 
 .food-item {
   width: 45%;
+  border-bottom: 0.1em solid black;
+  font-family: Raleway;
+  font-weight: bold;
 }
 
 .food-time {
   width: 40%;
+  border-bottom: 0.1em solid black;
+  text-align: right;
+  font-family: Quicksand;
 }
 
 .food-delete {
@@ -89,14 +94,13 @@ html, body {
 
 .btn-add {
   font-weight: bold;
-  color:#333;
   transition: 100ms;
-  background-color: rgba(0, 0, 255, .2);
+  background-color: #5b8d58;
   border-radius: 0%;
 }
 
 .btn-add:hover {
-  background-color: rgba(100, 100, 255, 0.1);
+  background-color: rgba(91, 141, 88, .5);
   transition: 250ms;
 }
 
