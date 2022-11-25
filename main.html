@@ -16,16 +16,17 @@
 
       <section class="container">
         <form class="form" id="form-add-item">
-          <div>
+          <div><button class="btn btn-add" type="submit">Tilføj madvarer</button></div>
+          <div class="form-name">
             <span>Varens navn: </span>
-            <input type="text" id="input-add-item-name" required placeholder="fx Mælk">
+            <input type="text" class="input-name" id="input-add-item-name" required placeholder="fx Mælk">
           </div>
-          <div>
-            <span>Tid til udløbsdato: </span>
-            <input type="date" id="input-add-item-date" required placeholder="fx 10 dage">
+          <div class="form-date">
+            <span>Udløbsdato: </span>
+            <input type="date" class="input-date" id="input-add-item-date" required>
           </div>
-          <div><button class="btn btn-add" type="submit">Tilføj mad</button></div>
         </form>
+        <button class="btn btn-idea" onclick="ideas()">Kom med ideer til mig</button>
         
         <script src="./src/add.js"></script>
       </section>
