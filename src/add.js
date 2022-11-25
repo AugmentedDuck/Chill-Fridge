@@ -41,7 +41,7 @@ var form = document.getElementById("form-add-item");
     
     ids++
     if (difference < 5) {
-      alert("Advarsel\n" + foodName + " udløber om " + difference + " dage");
+      alert("Advarsel!\n" + foodName + " udløber om " + difference + " dage");
     }
   } 
   
@@ -52,4 +52,8 @@ var form = document.getElementById("form-add-item");
 
     div.remove()
 
+  }
+
+  function ideas(){
+    alert("Advarsel!\nDenne funktion er ikke færdig")
   }
