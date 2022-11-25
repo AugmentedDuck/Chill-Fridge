@@ -13,7 +13,7 @@ html, body {
 }
 
 .main-header {
-  padding-bottom: 2em;
+  padding-top: 1em;
 }
 
 .web-name {
@@ -79,6 +79,7 @@ html, body {
   border-bottom: 0.1em solid black;
   font-family: Raleway;
   font-weight: bold;
+  font-size: 1.2em;
 }
 
 .food-time {
@@ -86,6 +87,7 @@ html, body {
   border-bottom: 0.1em solid black;
   text-align: right;
   font-family: Quicksand;
+  font-size: 1.2em;
 }
 
 .food-delete {
@@ -104,20 +106,35 @@ html, body {
   transition: 250ms;
 }
 
-.btn-idea-align {
-  left: 40%;
-  margin: 0;
-  position: relative;
-}
-
 .btn-idea {
-  padding: 1em;
+  font-weight: bold;
+  transition: 100ms;
+  background-color: #5b8d58;
   border-radius: 0%;
-  background-color: rgba(200, 200, 200, .5);
-  transition: 250ms;
-  color: #333;
 }
 
 .btn-idea:hover {
-  background-color: rgba(200, 200, 200, 0.25);
+  background-color: rgba(91, 141, 88, .5);
+  transition: 250ms;
+}
+
+.form-name,
+.form-date {
+  margin-top: 1em;
+  font-family: Raleway;
+  font-size: 1.1em;
+}
+
+.input-name,
+.input-date {
+  border: 0;
+  border-bottom: 0.1em solid #080808;
+  width: 35%;
+  font-family: Raleway;
+  font-size: .85em;
+}
+
+.form {
+  padding-bottom: 1em;
+  border-bottom: 0.1em solid #080808;
 }
